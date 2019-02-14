@@ -19,6 +19,12 @@
 		CF8F4DDF22146F9400890171 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F4DDE22146F9400890171 /* AppDelegate.swift */; };
 		CF8F4DE622146F9500890171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF8F4DE522146F9500890171 /* Assets.xcassets */; };
 		CF8F4DE922146F9500890171 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF8F4DE722146F9500890171 /* LaunchScreen.storyboard */; };
+		CFF63D7B22159B6000933EDD /* LoginViewPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF63D7A22159B6000933EDD /* LoginViewPresenterMock.swift */; };
+		CFF63D7E2215A3B700933EDD /* APIClientLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF63D7D2215A3B700933EDD /* APIClientLoginService.swift */; };
+		CFF63D812215A3E800933EDD /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF63D802215A3E800933EDD /* APIClient.swift */; };
+		CFF63D842215A47B00933EDD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF63D832215A47B00933EDD /* User.swift */; };
+		CFF63D862215A67A00933EDD /* LoginServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF63D852215A67A00933EDD /* LoginServiceMock.swift */; };
+		CFF63D882215A79800933EDD /* LoginViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF63D872215A79800933EDD /* LoginViewControllerMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +58,12 @@
 		CF8F4DEA22146F9500890171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF8F4DEF22146F9500890171 /* TreinamentoTestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreinamentoTestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF8F4DF522146F9500890171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFF63D7A22159B6000933EDD /* LoginViewPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewPresenterMock.swift; sourceTree = "<group>"; };
+		CFF63D7D2215A3B700933EDD /* APIClientLoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientLoginService.swift; sourceTree = "<group>"; };
+		CFF63D802215A3E800933EDD /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		CFF63D832215A47B00933EDD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CFF63D852215A67A00933EDD /* LoginServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceMock.swift; sourceTree = "<group>"; };
+		CFF63D872215A79800933EDD /* LoginViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerMock.swift; sourceTree = "<group>"; };
 		F62E8028CFD5E269DE4E37AF /* Pods-TreinamentoTestsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreinamentoTestsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TreinamentoTestsTests/Pods-TreinamentoTestsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +125,8 @@
 		CF8F3F5922147DD5008BD9BF /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				CFF63D822215A47300933EDD /* Model */,
+				CFF63D7C2215A39700933EDD /* Network */,
 				CF8F3F5C22147E17008BD9BF /* LoginViewController.swift */,
 				CF8F3F5E22147ED9008BD9BF /* LoginPresenter.swift */,
 			);
@@ -146,13 +160,6 @@
 			path = Authentication;
 			sourceTree = "<group>";
 		};
-		CF8F3F6E22148BEC008BD9BF /* Mocks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Mocks;
-			sourceTree = "<group>";
-		};
 		CF8F4DD222146F9400890171 = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +183,7 @@
 		CF8F4DDD22146F9400890171 /* TreinamentoTests */ = {
 			isa = PBXGroup;
 			children = (
+				CFF63D7F2215A3DB00933EDD /* Network */,
 				CF8F3F6022148031008BD9BF /* Common */,
 				CF8F3F5722147D98008BD9BF /* Resources */,
 				CF8F3F5622147D88008BD9BF /* App */,
@@ -187,12 +195,46 @@
 		CF8F4DF222146F9500890171 /* TreinamentoTestsTests */ = {
 			isa = PBXGroup;
 			children = (
-				CF8F3F6E22148BEC008BD9BF /* Mocks */,
+				CFF63D7922159B5300933EDD /* Mocks */,
 				CF8F3F63221488BF008BD9BF /* Features */,
 				CF8F4DF522146F9500890171 /* Info.plist */,
 				CF8F3F65221488E1008BD9BF /* TreinamentoTestsTests-Bridging-Header.h */,
 			);
 			path = TreinamentoTestsTests;
+			sourceTree = "<group>";
+		};
+		CFF63D7922159B5300933EDD /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				CFF63D7A22159B6000933EDD /* LoginViewPresenterMock.swift */,
+				CFF63D852215A67A00933EDD /* LoginServiceMock.swift */,
+				CFF63D872215A79800933EDD /* LoginViewControllerMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		CFF63D7C2215A39700933EDD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CFF63D7D2215A3B700933EDD /* APIClientLoginService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CFF63D7F2215A3DB00933EDD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CFF63D802215A3E800933EDD /* APIClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CFF63D822215A47300933EDD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CFF63D832215A47B00933EDD /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		FE85B3401356DADF7E28FA8A /* Pods */ = {
@@ -405,9 +447,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF8F3F5F22147ED9008BD9BF /* LoginPresenter.swift in Sources */,
+				CFF63D7E2215A3B700933EDD /* APIClientLoginService.swift in Sources */,
 				CF8F3F622214809B008BD9BF /* CodableView.swift in Sources */,
 				CF8F3F5D22147E17008BD9BF /* LoginViewController.swift in Sources */,
 				CF8F4DDF22146F9400890171 /* AppDelegate.swift in Sources */,
+				CFF63D812215A3E800933EDD /* APIClient.swift in Sources */,
+				CFF63D842215A47B00933EDD /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +462,9 @@
 			files = (
 				CF8F3F6D221489CF008BD9BF /* LoginPresenterTests.swift in Sources */,
 				CF8F3F6B22148997008BD9BF /* LoginViewControllerTests.swift in Sources */,
+				CFF63D882215A79800933EDD /* LoginViewControllerMock.swift in Sources */,
+				CFF63D7B22159B6000933EDD /* LoginViewPresenterMock.swift in Sources */,
+				CFF63D862215A67A00933EDD /* LoginServiceMock.swift in Sources */,
 				CF8F3F67221488E2008BD9BF /* LoginViewControllerSpec.swift in Sources */,
 				CF8F3F692214895A008BD9BF /* LoginPresenterSpec.swift in Sources */,
 			);

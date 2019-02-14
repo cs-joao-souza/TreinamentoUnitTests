@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func setupRootViewController() {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let presenter = LoginPresenter()
+        let presenter = LoginPresenter(service: APIClientLoginService())
         let loginViewController = LoginViewController(presenter: presenter)
         let navigationController = UINavigationController(rootViewController: loginViewController)
 

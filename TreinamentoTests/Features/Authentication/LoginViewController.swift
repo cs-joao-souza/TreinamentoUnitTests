@@ -102,7 +102,5 @@ class LoginViewController: UIViewController, CodableView {
     
     @objc func executeLogin() {
         presenter.didClickExecuteLogin(username: textFieldUsername.text!, password: textFieldPassword.text!)
-        
     }
-
 }
