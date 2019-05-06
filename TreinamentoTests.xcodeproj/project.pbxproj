@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		35D8CB310F660D442FD1BE80 /* Pods_TreinamentoTestsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53E3FA40577591906E9D254 /* Pods_TreinamentoTestsTests.framework */; };
 		5B864D80F95AF3296E044259 /* Pods_TreinamentoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E6C0DE3E2A0A0AEA3D97170 /* Pods_TreinamentoTests.framework */; };
+		CF3A99832280F1D0006A929C /* LoginViewControllerKIFSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3A99822280F1D0006A929C /* LoginViewControllerKIFSpec.swift */; };
+		CF3A99852280F1EF006A929C /* LoginPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3A99842280F1EF006A929C /* LoginPresenterMock.swift */; };
+		CF3A99882280F4D3006A929C /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3A99872280F4D3006A929C /* ReusableView.swift */; };
+		CF3A998E2280F642006A929C /* ReusableViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3A998D2280F642006A929C /* ReusableViewSpec.swift */; };
+		CF3A99912280F6FD006A929C /* SizeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3A99902280F6FD006A929C /* SizeHelper.swift */; };
 		CF8F3F5D22147E17008BD9BF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F3F5C22147E17008BD9BF /* LoginViewController.swift */; };
 		CF8F3F5F22147ED9008BD9BF /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F3F5E22147ED9008BD9BF /* LoginPresenter.swift */; };
 		CF8F3F622214809B008BD9BF /* CodableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F3F612214809B008BD9BF /* CodableView.swift */; };
@@ -19,9 +24,17 @@
 		CF8F4DDF22146F9400890171 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8F4DDE22146F9400890171 /* AppDelegate.swift */; };
 		CF8F4DE622146F9500890171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF8F4DE522146F9500890171 /* Assets.xcassets */; };
 		CF8F4DE922146F9500890171 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF8F4DE722146F9500890171 /* LaunchScreen.storyboard */; };
+		E00D6C453B02CAA66577AC1A /* Pods_TreinamentoKIFTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6AF25B222569D26068BA484 /* Pods_TreinamentoKIFTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CF3A997B2280F064006A929C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF8F4DD322146F9400890171 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF8F4DDA22146F9400890171;
+			remoteInfo = TreinamentoTests;
+		};
 		CF8F4DF022146F9500890171 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CF8F4DD322146F9400890171 /* Project object */;
@@ -32,11 +45,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1167ECBC5BE8924279ACDA21 /* Pods-TreinamentoKIFTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreinamentoKIFTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TreinamentoKIFTests/Pods-TreinamentoKIFTests.debug.xcconfig"; sourceTree = "<group>"; };
 		89E4E4BBE41CAE31CE63F27A /* Pods-TreinamentoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreinamentoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TreinamentoTests/Pods-TreinamentoTests.release.xcconfig"; sourceTree = "<group>"; };
 		93F4DBD3E971C1E218C3E4B8 /* Pods-TreinamentoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreinamentoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TreinamentoTests/Pods-TreinamentoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9E6C0DE3E2A0A0AEA3D97170 /* Pods_TreinamentoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TreinamentoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A53E3FA40577591906E9D254 /* Pods_TreinamentoTestsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TreinamentoTestsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6AF25B222569D26068BA484 /* Pods_TreinamentoKIFTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TreinamentoKIFTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0D898D7CB50B420C6D16F92 /* Pods-TreinamentoKIFTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreinamentoKIFTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TreinamentoKIFTests/Pods-TreinamentoKIFTests.release.xcconfig"; sourceTree = "<group>"; };
 		C988C8CF916962FAA0A016AA /* Pods-TreinamentoTestsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreinamentoTestsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TreinamentoTestsTests/Pods-TreinamentoTestsTests.release.xcconfig"; sourceTree = "<group>"; };
+		CF3A99762280F064006A929C /* TreinamentoKIFTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreinamentoKIFTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF3A997A2280F064006A929C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF3A99822280F1D0006A929C /* LoginViewControllerKIFSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerKIFSpec.swift; sourceTree = "<group>"; };
+		CF3A99842280F1EF006A929C /* LoginPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterMock.swift; sourceTree = "<group>"; };
+		CF3A99872280F4D3006A929C /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		CF3A998D2280F642006A929C /* ReusableViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewSpec.swift; sourceTree = "<group>"; };
+		CF3A99902280F6FD006A929C /* SizeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeHelper.swift; sourceTree = "<group>"; };
 		CF8F3F5C22147E17008BD9BF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CF8F3F5E22147ED9008BD9BF /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		CF8F3F612214809B008BD9BF /* CodableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableView.swift; sourceTree = "<group>"; };
@@ -56,6 +79,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CF3A99732280F064006A929C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E00D6C453B02CAA66577AC1A /* Pods_TreinamentoKIFTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CF8F4DD822146F9400890171 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -80,8 +111,58 @@
 			children = (
 				9E6C0DE3E2A0A0AEA3D97170 /* Pods_TreinamentoTests.framework */,
 				A53E3FA40577591906E9D254 /* Pods_TreinamentoTestsTests.framework */,
+				B6AF25B222569D26068BA484 /* Pods_TreinamentoKIFTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF3A99772280F064006A929C /* TreinamentoKIFTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF3A99802280F1BA006A929C /* Features */,
+				CF3A997A2280F064006A929C /* Info.plist */,
+			);
+			path = TreinamentoKIFTests;
+			sourceTree = "<group>";
+		};
+		CF3A99802280F1BA006A929C /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				CF3A99812280F1BF006A929C /* Authentication */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		CF3A99812280F1BF006A929C /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				CF3A99822280F1D0006A929C /* LoginViewControllerKIFSpec.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		CF3A99862280F4C6006A929C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CF3A99872280F4D3006A929C /* ReusableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CF3A99892280F580006A929C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CF3A998D2280F642006A929C /* ReusableViewSpec.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CF3A998F2280F6F4006A929C /* TestHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				CF3A99902280F6FD006A929C /* SizeHelper.swift */,
+			);
+			path = TestHelpers;
 			sourceTree = "<group>";
 		};
 		CF8F3F5622147D88008BD9BF /* App */ = {
@@ -113,6 +194,7 @@
 		CF8F3F5922147DD5008BD9BF /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				CF3A99862280F4C6006A929C /* Views */,
 				CF8F3F5C22147E17008BD9BF /* LoginViewController.swift */,
 				CF8F3F5E22147ED9008BD9BF /* LoginPresenter.swift */,
 			);
@@ -138,6 +220,7 @@
 		CF8F3F64221488C3008BD9BF /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				CF3A99892280F580006A929C /* Views */,
 				CF8F3F66221488E2008BD9BF /* LoginViewControllerSpec.swift */,
 				CF8F3F682214895A008BD9BF /* LoginPresenterSpec.swift */,
 				CF8F3F6A22148997008BD9BF /* LoginViewControllerTests.swift */,
@@ -149,6 +232,7 @@
 		CF8F3F6E22148BEC008BD9BF /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				CF3A99842280F1EF006A929C /* LoginPresenterMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -158,6 +242,7 @@
 			children = (
 				CF8F4DDD22146F9400890171 /* TreinamentoTests */,
 				CF8F4DF222146F9500890171 /* TreinamentoTestsTests */,
+				CF3A99772280F064006A929C /* TreinamentoKIFTests */,
 				CF8F4DDC22146F9400890171 /* Products */,
 				FE85B3401356DADF7E28FA8A /* Pods */,
 				3331299A87ABFD13B4FF5D39 /* Frameworks */,
@@ -169,6 +254,7 @@
 			children = (
 				CF8F4DDB22146F9400890171 /* TreinamentoTests.app */,
 				CF8F4DEF22146F9500890171 /* TreinamentoTestsTests.xctest */,
+				CF3A99762280F064006A929C /* TreinamentoKIFTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -187,6 +273,7 @@
 		CF8F4DF222146F9500890171 /* TreinamentoTestsTests */ = {
 			isa = PBXGroup;
 			children = (
+				CF3A998F2280F6F4006A929C /* TestHelpers */,
 				CF8F3F6E22148BEC008BD9BF /* Mocks */,
 				CF8F3F63221488BF008BD9BF /* Features */,
 				CF8F4DF522146F9500890171 /* Info.plist */,
@@ -202,6 +289,8 @@
 				89E4E4BBE41CAE31CE63F27A /* Pods-TreinamentoTests.release.xcconfig */,
 				F62E8028CFD5E269DE4E37AF /* Pods-TreinamentoTestsTests.debug.xcconfig */,
 				C988C8CF916962FAA0A016AA /* Pods-TreinamentoTestsTests.release.xcconfig */,
+				1167ECBC5BE8924279ACDA21 /* Pods-TreinamentoKIFTests.debug.xcconfig */,
+				C0D898D7CB50B420C6D16F92 /* Pods-TreinamentoKIFTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -209,6 +298,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CF3A99752280F064006A929C /* TreinamentoKIFTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF3A997F2280F064006A929C /* Build configuration list for PBXNativeTarget "TreinamentoKIFTests" */;
+			buildPhases = (
+				0D243E35FA067694A4FF9E8F /* [CP] Check Pods Manifest.lock */,
+				CF3A99722280F064006A929C /* Sources */,
+				CF3A99732280F064006A929C /* Frameworks */,
+				CF3A99742280F064006A929C /* Resources */,
+				C480407CB487A513A9A6DA45 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF3A997C2280F064006A929C /* PBXTargetDependency */,
+			);
+			name = TreinamentoKIFTests;
+			productName = TreinamentoKIFTests;
+			productReference = CF3A99762280F064006A929C /* TreinamentoKIFTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CF8F4DDA22146F9400890171 /* TreinamentoTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF8F4DF822146F9500890171 /* Build configuration list for PBXNativeTarget "TreinamentoTests" */;
@@ -258,6 +367,10 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "João Pedro Souza";
 				TargetAttributes = {
+					CF3A99752280F064006A929C = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = CF8F4DDA22146F9400890171;
+					};
 					CF8F4DDA22146F9400890171 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -283,11 +396,19 @@
 			targets = (
 				CF8F4DDA22146F9400890171 /* TreinamentoTests */,
 				CF8F4DEE22146F9500890171 /* TreinamentoTestsTests */,
+				CF3A99752280F064006A929C /* TreinamentoKIFTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CF3A99742280F064006A929C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CF8F4DD922146F9400890171 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -307,6 +428,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0D243E35FA067694A4FF9E8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TreinamentoKIFTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2CE62B784D69B333CA935C32 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -317,14 +460,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TreinamentoTestsTests/Pods-TreinamentoTestsTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble-Snapshots/Nimble_Snapshots.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/iOSSnapshotTestCase/FBSnapshotTestCase.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble_Snapshots.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -375,6 +522,32 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TreinamentoTests/Pods-TreinamentoTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C480407CB487A513A9A6DA45 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TreinamentoKIFTests/Pods-TreinamentoKIFTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/KIF/KIF.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KIF.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TreinamentoKIFTests/Pods-TreinamentoKIFTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E4BEFB3DF2CCB622A5E70DC0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -400,11 +573,20 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CF3A99722280F064006A929C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF3A99832280F1D0006A929C /* LoginViewControllerKIFSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CF8F4DD722146F9400890171 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CF8F3F5F22147ED9008BD9BF /* LoginPresenter.swift in Sources */,
+				CF3A99882280F4D3006A929C /* ReusableView.swift in Sources */,
 				CF8F3F622214809B008BD9BF /* CodableView.swift in Sources */,
 				CF8F3F5D22147E17008BD9BF /* LoginViewController.swift in Sources */,
 				CF8F4DDF22146F9400890171 /* AppDelegate.swift in Sources */,
@@ -415,9 +597,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF3A99912280F6FD006A929C /* SizeHelper.swift in Sources */,
 				CF8F3F6D221489CF008BD9BF /* LoginPresenterTests.swift in Sources */,
 				CF8F3F6B22148997008BD9BF /* LoginViewControllerTests.swift in Sources */,
 				CF8F3F67221488E2008BD9BF /* LoginViewControllerSpec.swift in Sources */,
+				CF3A99852280F1EF006A929C /* LoginPresenterMock.swift in Sources */,
+				CF3A998E2280F642006A929C /* ReusableViewSpec.swift in Sources */,
 				CF8F3F692214895A008BD9BF /* LoginPresenterSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +610,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CF3A997C2280F064006A929C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF8F4DDA22146F9400890171 /* TreinamentoTests */;
+			targetProxy = CF3A997B2280F064006A929C /* PBXContainerItemProxy */;
+		};
 		CF8F4DF122146F9500890171 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CF8F4DDA22146F9400890171 /* TreinamentoTests */;
@@ -444,6 +634,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CF3A997D2280F064006A929C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1167ECBC5BE8924279ACDA21 /* Pods-TreinamentoKIFTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TreinamentoKIFTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.TreinamentoKIFTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TreinamentoTests.app/TreinamentoTests";
+			};
+			name = Debug;
+		};
+		CF3A997E2280F064006A929C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0D898D7CB50B420C6D16F92 /* Pods-TreinamentoKIFTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TreinamentoKIFTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.TreinamentoKIFTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TreinamentoTests.app/TreinamentoTests";
+			};
+			name = Release;
+		};
 		CF8F4DF622146F9500890171 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -650,6 +882,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CF3A997F2280F064006A929C /* Build configuration list for PBXNativeTarget "TreinamentoKIFTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF3A997D2280F064006A929C /* Debug */,
+				CF3A997E2280F064006A929C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CF8F4DD622146F9400890171 /* Build configuration list for PBXProject "TreinamentoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

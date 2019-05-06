@@ -14,14 +14,18 @@ class LoginViewController: UIViewController, CodableView {
        let textField = UITextField()
        textField.placeholder = "Username"
        textField.borderStyle = UITextField.BorderStyle.roundedRect
+       textField.accessibilityLabel = "textField_username"
         
        return textField
     }()
     
     let textFieldPassword: UITextField = {
         let textField = UITextField()
-        textField.placeholder = "Senha"
+        textField.placeholder = "Password"
         textField.borderStyle = UITextField.BorderStyle.roundedRect
+        textField.isSecureTextEntry = true
+        textField.accessibilityLabel = "textField_password"
+        
         
         return textField
     }()
@@ -35,6 +39,8 @@ class LoginViewController: UIViewController, CodableView {
         
         return button
     }()
+    
+    let viewReusable = ReusableView()
     
     var presenter: LoginViewPresenter
     
@@ -62,6 +68,7 @@ class LoginViewController: UIViewController, CodableView {
         view.addSubview(textFieldUsername)
         view.addSubview(textFieldPassword)
         view.addSubview(buttonLogin)
+        view.addSubview(viewReusable)
     }
     
     func buildConstraints() {
@@ -90,6 +97,12 @@ class LoginViewController: UIViewController, CodableView {
             make.trailing.equalToSuperview().offset(-20)
             make.height.equalTo(50)
         }
+        
+        viewReusable.snp.makeConstraints { make in
+            make.top.equalTo(buttonLogin.snp.bottom).offset(15)
+            make.leading.equalToSuperview().offset(20)
+            make.trailing.equalToSuperview().offset(-20)
+        }
     }
     
     func showAlert(title: String, message: String) {
@@ -102,7 +115,5 @@ class LoginViewController: UIViewController, CodableView {
     
     @objc func executeLogin() {
         presenter.didClickExecuteLogin(username: textFieldUsername.text!, password: textFieldPassword.text!)
-        
     }
-
 }
